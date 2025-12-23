@@ -1,14 +1,14 @@
 import "server-only";
 import { createServerClient } from "@supabase/ssr";
 import { cookies } from "next/headers";
-import { clientEnv } from "../../../env.shared";
+import { sharedEnv } from "../../../env.shared";
 
 export async function createClient() {
   const cookieStore = await cookies();
 
   return createServerClient(
-    clientEnv.NEXT_PUBLIC_SUPABASE_URL,
-    clientEnv.NEXT_PUBLIC_SUPABASE_ANON_KEY,
+    sharedEnv.NEXT_PUBLIC_SUPABASE_URL,
+    sharedEnv.NEXT_PUBLIC_SUPABASE_ANON_KEY,
     {
       cookies: {
         getAll() {
