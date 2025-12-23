@@ -13,3 +13,7 @@
     + npm/pnpm run db:studio : Open studio UI for database in port 127.0.0.1:4983,
     + npm/pnpm run db:pull : Pull all from database to update or generate schema,
     + npm/pnpm run db:check : Check consistency of migrations history with database
+
+- Server only code: 
+    + Remember alllways add "use server" at the top of server action file
+    + Remember alllways import "server-only" at the top of server file
