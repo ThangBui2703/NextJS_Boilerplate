@@ -15,5 +15,5 @@
     + npm/pnpm run db:check : Check consistency of migrations history with database
 
 - Server only code: 
-    + Remember alllways add "use server" at the top of server action file
-    + Remember alllways import "server-only" at the top of server file
+    + Remember allways add "use server" at the top of server action file
+    + Remember allways import "server-only" at the top of server file
