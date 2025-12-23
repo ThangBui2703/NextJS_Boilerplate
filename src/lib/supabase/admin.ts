@@ -1,7 +1,7 @@
 import "server-only";
 import { createClient } from "@supabase/supabase-js";
 import { serverEnv } from "@/backend/env.server";
-import { clientEnv } from "../../../env.share";
+import { clientEnv } from "../../../env.shared";
 export function createAdminClient() {
   if (!serverEnv.SUPABASE_SERVICE_ROLE_KEY) {
     throw new Error(

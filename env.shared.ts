@@ -22,4 +22,4 @@ if (!parsed.success) {
   throw new Error("Invalid environment variables");
 }
 
-export const clientEnv = parsed.data;
+export const sharedEnv = parsed.data;
