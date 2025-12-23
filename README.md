@@ -3,9 +3,9 @@
     + If using pnpm: pnpm dlx npm-check-updates -u && rm -rf node_modules pnpm-lock.yaml && pnpm install
 
 - Enviroment varialbe:
-    + Server: can use both env in env.server.ts and env.client.ts
-    + Client: can only use enc in env.client.ts
-    * Note: env in env.client.ts must be start with prefix: NEXT_PUBLIC_
+    + Server: can use both env in env.server.ts and env.share.ts
+    + Client: can only use env in env.share.ts
+    * Note: env in env.share.ts must be start with prefix: NEXT_PUBLIC_
 
 - Database migration:
     + npm/pnpm run db:generate : Create migration file,
